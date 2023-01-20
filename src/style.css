@@ -1,3 +1,47 @@
 h1 {
-  font-size: 100px;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+body {
+  background-color: #add8e6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.time {
+  font-size: 35px;
+  margin: 0px;
+  position: relative;
+  top: -40px;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.city-date {
+  padding: 5px;
+  margin: 10px;
+  font-size: 15px;
+  line-height: 2%;
+}
+
+#cities {
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+  margin: 10px;
 }
