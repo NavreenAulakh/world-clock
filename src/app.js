@@ -29,3 +29,15 @@ function setBankokTime() {
 }
 
 setInterval(setBankokTime, 1000);
+
+// Select
+
+function showCityTime(event) {
+  let selectedCityTimezone = event.target.value;
+  let cityTime = moment().tz(selectedCityTimezone);
+  let citiesElement = document.querySelector("#all-cities");
+  citiesElement.innerHTML = cityTime.format("MMMM Do YYYY");
+}
+
+let select = document.querySelector("#select");
+select.addEventListener("change", showCityTime);
