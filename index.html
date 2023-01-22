@@ -10,38 +10,44 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="src/style.css" />
     <title>World Clock</title>
   </head>
   <body>
-    <div class="container">
-      <h1>World Clock</h1>
+    <div class="page-content">
+      <div class="container">
+        <h1>World Clock</h1>
 
-      <select id="cities">
-        <option value="">Select a City</option>
-        <option value="Paris">Paris</option>
-        <option value="Toronto">Toronto</option>
-        <option value="Sydney">Sydney</option>
-      </select>
+        <select id="select">
+          <option value="">Select a City</option>
+          <option value="Paris">Paris</option>
+          <option value="Toronto">Toronto</option>
+          <option value="Sydney">Sydney</option>
+        </select>
 
-      <div class="row city-date">
-        <h2>Paris 🇫🇷</h2>
-        <div class="col" class="date">August 15 2020</div>
-        <div class="col time">1:48:15 <span class="small">AM</span></div>
+        <div class="city">
+          <div>
+            <h2>Paris 🇫🇷</h2>
+            <div class="date">Aug 15 2020</div>
+          </div>
+          <div class="time">1:48:15 <span class="small">AM</span></div>
+        </div>
+
+        <div class="city">
+          <div>
+            <h2>Paris 🇫🇷</h2>
+            <div class="date">Aug 15 2020</div>
+          </div>
+          <div class="time">1:48:15 <span class="small">AM</span></div>
+        </div>
       </div>
-
-      <div class="row city-date">
-        <h2>Toronto 🇨🇦</h2>
-        <div class="col" class="date">August 15 2020</div>
-        <div class="col time">1:48:15 <span class="small">AM</span></div>
-      </div>
-
-      <div class="row city-date">
-        <h2>Vienna 🇦🇹</h2>
-        <div class="col" class="date">August 15 2020</div>
-        <div class="col time">1:48:15 <span class="small">AM</span></div>
-      </div>
+      <footer>
+        This project was coded by Navreen Aulakh and is
+        <a href="https://github.com/navreenAulakh"> open-sourced on Github</a>
+      </footer>
     </div>
+
     <script src="src/app.js"></script>
   </body>
 </html>
