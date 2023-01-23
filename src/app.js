@@ -67,7 +67,8 @@ function showCityTime(event) {
               "h:mm:ss"
             )} <small> ${cityTime.format("A")} </small"
             </div>
-          </div>`;
+          </div>
+<a class="btn btn-primary"role="button" a href="index.html"> Return to Home</a>`;
 }
 
 let select = document.querySelector("#select");
