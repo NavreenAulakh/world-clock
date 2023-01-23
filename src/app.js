@@ -34,6 +34,9 @@ setInterval(setBankokTime, 1000);
 
 function showCityTime(event) {
   let selectedCityTimezone = event.target.value;
+  if (selectedCityTimezone == "current") {
+    selectedCityTimezone = moment.tz.guess();
+  }
   let cityName = selectedCityTimezone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(selectedCityTimezone);
   let citiesElement = document.querySelector("#all-cities");
