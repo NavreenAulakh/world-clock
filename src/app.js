@@ -30,6 +30,23 @@ function setBankokTime() {
 
 setInterval(setBankokTime, 1000);
 
+// Mumbai
+
+function setReykjavikTime() {
+  let reykjavikTime = moment().tz("Atlantic/Reykjavik");
+
+  let reykjavikElement = document.querySelector("#reykjavik");
+  let reykjavikDateElement = reykjavikElement.querySelector(".date");
+  let reykjavikTimeElement = reykjavikElement.querySelector(".time");
+
+  reykjavikDateElement.innerHTML = reykjavikTime.format("MMMM Do YYYY");
+  reykjavikTimeElement.innerHTML = reykjavikTime.format(
+    "h:mm:ss [<small>] A  [</small]"
+  );
+}
+
+setInterval(setReykjavikTime, 1000);
+
 // Select
 
 function showCityTime(event) {
